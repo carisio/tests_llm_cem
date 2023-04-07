@@ -1,0 +1,35 @@
+Give me a python code using scikit-learn that train a multi layer perceptron. The input is a numpy array with two columns, each one representing one variable. The output should be a numerical value (it's a regression problem). Normalize the inputs.
+--------------------------
+Sure, here's an example code that uses scikit-learn to train a Multi-Layer Perceptron (MLP) for a regression problem:
+
+python
+Copy code
+import numpy as np
+from sklearn.neural_network import MLPRegressor
+from sklearn.preprocessing import StandardScaler
+
+# generate some example data
+X = np.array([[1, 2], [3, 4], [5, 6], [7, 8]])
+y = np.array([10, 20, 30, 40])
+
+# normalize the inputs
+scaler = StandardScaler()
+X_normalized = scaler.fit_transform(X)
+
+# create an MLPRegressor with one hidden layer
+mlp = MLPRegressor(hidden_layer_sizes=(100,), max_iter=1000, alpha=0.01)
+
+# train the MLPRegressor on the normalized inputs
+mlp.fit(X_normalized, y)
+
+# make predictions on new inputs
+X_new = np.array([[2, 3], [4, 5]])
+X_new_normalized = scaler.transform(X_new)
+y_pred = mlp.predict(X_new_normalized)
+
+print(y_pred)
+
+
+In this example code, we first generate some example data X and y. Then, we normalize the inputs using a StandardScaler. We create an MLPRegressor with one hidden layer containing 100 neurons, and train it on the normalized inputs. Finally, we make predictions on new inputs X_new and print the predicted output values y_pred.
+
+Note that the hyperparameters used in this code (e.g., hidden_layer_sizes, max_iter, alpha) are just examples and may need to be adjusted depending on the specific problem being solved.

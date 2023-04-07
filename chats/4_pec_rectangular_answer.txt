@@ -1,0 +1,50 @@
+What is the purpose of this code?
+
+void RectangularPECSheetFDTDCore::ElectricFieldsChanged(double t) {
+	FDTDEngine* engine = static_cast<FDTDEngine*>(GetEngine());
+
+	if (dto.IsCutAtZ()) {
+		for (int i = imin; i < imax; i++) {
+			for (int j = jmin; j <= jmax; j++) {
+				engine->SetEx(i,j,kmin,0);
+			}
+		}
+		for (int i = imin; i <= imax; i++) {
+			for (int j = jmin; j < jmax; j++) {
+				engine->SetEy(i,j,kmin,0);
+			}
+		}
+
+	} else if (dto.IsCutAtX()) {
+		for (int j = jmin; j < jmax; j++) {
+			for (int k = kmin; k <= kmax; k++) {
+				engine->SetEy(imin,j,k,0);
+			}
+		}
+		for (int j = jmin; j <= jmax; j++) {
+			for (int k = kmin; k < kmax; k++) {
+				engine->SetEz(imin,j,k,0);
+			}
+		}
+
+	} else if (dto.IsCutAtY()) {
+		for (int i = imin; i < imax; i++) {
+			for (int k = kmin; k <= kmax; k++) {
+				engine->SetEx(i,jmin,k,0);
+			}
+		}
+		for (int i = imin; i <= imax; i++) {
+			for (int k = kmin; k < kmax; k++) {
+				engine->SetEz(i,jmin,k,0);
+			}
+		}
+	}
+}
+--------------------------
+This code is a method implementation of a class called RectangularPECSheetFDTDCore. It is part of a larger program that likely performs Finite-Difference Time-Domain (FDTD) simulations for electromagnetic field propagation in a rectangular region.
+
+The purpose of this specific method ElectricFieldsChanged is to set the electric field components at certain locations to zero. This is done differently depending on whether the simulation domain is cut along the x, y or z direction, as specified by the dto object.
+
+For instance, if dto.IsCutAtZ() is true, then the x- and y-components of the electric field at the minimum z-plane are set to zero. Similarly, if dto.IsCutAtX() is true, then the y- and z-components of the electric field at the minimum x-plane are set to zero. And if dto.IsCutAtY() is true, then the x- and z-components of the electric field at the minimum y-plane are set to zero.
+
+This method is likely called at the beginning of each time step of the simulation to ensure that the electric fields satisfy any boundary conditions that may have been imposed.
