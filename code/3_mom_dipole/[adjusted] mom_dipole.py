@@ -40,4 +40,5 @@ for th in range(len(theta)):
 # Plot radiation pattern
 plt.polar(theta, np.abs(Etheta))
 plt.title("Radiation Pattern of Half-Wave Dipole Antenna")
+plt.savefig('fig_mom_dipole.png', dpi=600, bbox_inches='tight')
 plt.show()

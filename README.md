@@ -29,7 +29,9 @@ This repository contains tests with ChatGPT in the context of computational elec
 ### 3.1 Explaining the FDTD-3D code a rectangular PEC
 
 1. [Chat transcription](./chats/4_pec_rectangular_answer.txt)
+2. [RectangularPECSheetFDTDCore.cpp](https://github.com/carisio/emstudio/blob/master/EMStudio/src/emstudio/core/engine/fdtd/elementcore/RectangularPECSheetFDTDCore.cpp)
 
 ### 3.2 Explaining the FDTD-3D main loop to update the E-field
 
 1. [Chat transcription](./chats/5_fdtd_loop_e_field_changed.txt)
+2. [FDTDData.cpp](https://github.com/carisio/emstudio/blob/master/EMStudio/src/emstudio/core/engine/fdtd/FDTDData.cpp)

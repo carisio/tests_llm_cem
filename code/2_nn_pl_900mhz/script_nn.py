@@ -51,7 +51,7 @@ fig, ax = plt.subplots()
 
 plt.plot(np.arange(1, len(y_all)+1), y_all, c='lightgray', label='Measured')
 plt.plot(np.arange(1, len(path_loss_neural_network)+1), path_loss_neural_network, c='tab:orange', label=r'Neural network')
-plt.plot(np.arange(1, len(path_loss_genetic_algorith)+1), path_loss_genetic_algorith, c='tab:blue', label='Reference')
+plt.plot(np.arange(1, len(path_loss_genetic_algorith)+1), path_loss_genetic_algorith, c='tab:blue', label='[15]')
 
 plt.axvline(x=len(y), linestyle=':', color='black')
 
