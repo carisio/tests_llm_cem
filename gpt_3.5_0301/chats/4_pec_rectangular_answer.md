@@ -1,0 +1,1 @@
+![Screenshot: Explaining the FDTD-3D code a rectangular PEC](./figures/4_pec_rectangular_answer.png)
