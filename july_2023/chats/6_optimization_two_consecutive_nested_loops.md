@@ -1,0 +1,1 @@
+![Screenshot: Optimization of two consecutive nested loops](./figures/6_optimization_two_consecutive_nested_loops.png)

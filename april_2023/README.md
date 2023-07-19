@@ -1,4 +1,4 @@
-# Tests with ChatGPT conducted in April 2023 using GPT 3.5 (0301 snapshot)
+# Tests with ChatGPT conducted in April 2023 (GPT 3.5 model)
 
 Author: Leandro Carísio Fernandes
 

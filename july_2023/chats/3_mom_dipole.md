@@ -1,0 +1,1 @@
+![Screenshot: MoM to calculate the radiation pattern of a dipole](./figures/3_mom_dipole.png)

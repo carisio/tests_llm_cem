@@ -1,0 +1,1 @@
+![Screenshot: Neural network to predict path loss](./figures/2_nn_path_loss_900_mhz.png)
