@@ -15,7 +15,7 @@ This repository contains tests with ChatGPT in the context of computational elec
 
 ### Run 2
 
-1. Chat [transcription](./chats/1_conversion_fdtd3_matlab_to_python_run_2.txt) and [screenshots](./chats/1_conversion_fdtd3_matlab_to_python_run_2.md.md)
+1. Chat [transcription](./chats/1_conversion_fdtd3_matlab_to_python_run_2.txt) and [screenshots](./chats/1_conversion_fdtd3_matlab_to_python_run_2.md)
 2. [Original MATLAB code](./code/1_matlab_to_python/run%202/%5Boriginal%5D%20fdtd_3D_demo.m)
 3. [Converted Python code](./code/1_matlab_to_python/run%202/%5Bconverted_chatgpt%5D%20fdtd_3D_demo.py)
 4. [Converted Python code - manually adjusted](./code/1_matlab_to_python/run%202/%5Badjusted%5D%20fdtd_3D_demo.py)
