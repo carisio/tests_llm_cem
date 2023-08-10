@@ -6,4 +6,4 @@ This repository contains tests with ChatGPT in the context of computational elec
 
 1. [Tests conducted in April 2023 using GPT 3.5](./april_2023/README.md)
 
-2. [Tests conduct in July 2023 using GPT 3.5](./july_2023/README.md)
+2. [Tests conducted in July 2023 using GPT 3.5](./july_2023/README.md)
